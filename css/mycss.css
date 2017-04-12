@@ -1,0 +1,173 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+p{
+	color: slateblue;
+	transition: 0.3s;
+}
+h2{
+	height: 50px;
+	color: lightcoral;
+	transition: 0.3s;
+}
+#myanimate1{
+	width: 400px;
+	height: 250px;
+	margin: 30px;
+	position: relative;
+	overflow: hidden;
+}
+#myanimate1 img{
+	width: 420px;
+	height: 250px;
+	transition: 0.3s;
+}
+#myanimate1 figcaption{
+	position: absolute;
+	height: 50px;
+	left: 20px;
+	bottom: 0px;
+}
+
+#myanimate1:hover p{
+	transform: translateY(-30px);
+}
+#myanimate1:hover h2{
+	transform: translateY(-10px);
+}
+#myanimate1:hover img{
+	transform: translateX(-20px);
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+.animate2{
+	width: 500px;
+	height: 300px;
+	margin-left: 20px;
+	position: relative;
+	overflow: hidden;
+}
+.animate2 img{
+	width: 500px;
+	height: 300px;
+	transition: .2s;
+}
+.animate2 span{
+	position: absolute;
+	background: #FFF;
+}
+.animate2 h2{
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	transition: .2s;
+}
+span{
+	transition: .5s;
+}
+.s1{
+	top: 100px;
+	left: -220px;
+}
+.s2{
+	top: 130px;
+	left: -220px;
+	transition-delay: 0.2s;
+}
+.s3{
+	top: 170px;
+	left: -220px;
+	transition-delay: 0.3s;
+}
+.animate2:hover .s1{
+	transform: translateX(250px);
+}
+.animate2:hover .s2{
+	transform: translateX(250px);
+}
+.animate2:hover .s3{
+	transform: translateX(250px);
+}
+.animate2:hover img{
+	transform: scale(1.2);
+}
+.animate2:hover h2{
+	transform: translate(-5px,-10px);
+}
+.animate3{
+	margin: 20px;
+	width: 500px;
+	height: 300px;
+	position: relative;
+	overflow: hidden;
+}
+.animate3 img{
+	width: 500px;
+	height: 300px;
+	transition: .3s;
+}
+.bg{
+	position: absolute;
+	bottom: -40px;
+	left: 0;
+	width: 500px;
+	height: 40px;
+	background: gray;
+	opacity: .5;
+} 
+.word{
+	position: absolute;
+	bottom: -40px;
+	left: 0;
+	width: 500px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+}
+.animate3:hover .bg{
+	transform: translateY(-40px);
+}
+.animate3:hover .word{
+	transform: translateY(-40px);
+}
+.animate3:hover img{
+	transform: scale(1.2);
+}
+.animate4{
+	width: 500px;
+	height: 300px;
+	margin-left: 20px;
+	position: relative;
+	overflow: hidden;
+}
+.animate4 img{
+	width: 600px;
+	height: 400px;
+	transition: .3s;
+}
+.p1{
+	position: absolute;
+	top: 30px;
+	left: 50px;
+	transform: skew(90deg);
+	transition: .3s;
+}
+.p2{
+	position: absolute;
+	top: 100px;
+	left: 50px;
+	color: #fff;
+	transform: skew(90deg);
+	transition: .3s;
+}
+.animate4:hover img{
+	transform: scale(1.1);
+}
+.animate4:hover .p1{
+	transform: skew(0deg);
+}
+.animate4:hover .p2{
+	transform: skew(0deg);
+}
