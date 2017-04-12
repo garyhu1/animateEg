@@ -3,6 +3,23 @@
 	margin: 0;
 	list-style: none;
 }
+.totop{
+	position:fixed;
+	bottom: 20px;
+	right: 30px;
+	width: 50px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	background: forestgreen;
+}
+.totop .pp{
+	color: #fff;
+	height: 100px;
+	width: 50px;
+	line-height: 100px;
+	text-align: center;
+}
 p{
 	color: slateblue;
 	transition: 0.3s;
