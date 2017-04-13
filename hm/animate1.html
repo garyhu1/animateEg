@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>CSS3 动画</title>
+		<style type="text/css">
+			.animate {
+				width: 100px;
+				height: 100px;
+				background: pink;
+			}
+			.test {
+				width: 100px;
+				height: 100px;
+				background: darkmagenta;
+				position: absolute;
+				top: 120px;
+				left: 0;
+			}
+			
+			@keyframes name1 {
+				0% {
+					width: 100px;
+				}
+				29% {
+					width: 200px;
+				}
+				50% {
+					width: 50px;
+				}
+				100% {
+					width: 100px;
+				}
+			}
+			
+			@keyframes mymove {
+				100% {
+					left: 100px;
+				}
+			}
+			
+			/*
+			 * 属性	描述
+               @keyframes	规定动画。
+               animation	所有动画属性的简写属性，除了 animation-play-state 属性。
+               animation-name	规定 @keyframes 动画的名称。
+               animation-duration	规定动画完成一个周期所花费的秒或毫秒。默认是 0。
+               animation-timing-function	规定动画的速度曲线。默认是 "ease"。
+               animation-delay	规定动画何时开始。默认是 0。
+               animation-iteration-count	规定动画被播放的次数。默认是 1。
+               animation-direction	规定动画是否在下一周期逆向地播放。默认是 "normal"。
+               animation-play-state	规定动画是否正在运行或暂停。默认是 "running"。
+               animation-fill-mode	规定对象动画时间之外的状态。
+			 */
+			
+			.start:hover{
+				/*animation: 动画名称+动画执行时间+动画变换速率+延迟+动画执行次数+运动方向*/
+				animation: name1 4s linear 2s infinite alternate;
+				-webkit-animation: name1 4s linear 2s infinite alternate;
+			}
+			.move:hover{
+				animation: mymove 4s linear 1 alternate;
+				-webkit-animation: mymove 4s linear 1 alternate;
+			}
+		</style> 
+	</head>
+
+	<body>
+		<div class="animate start"></div>
+		<div class="test move"></div>
+	</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>旋转图片</title>
+		<style type="text/css">
+			#box{
+				height:150px;
+				width:300px;
+				border:1px solid #000;
+				background:url(../img/1.jpg);
+			}
+			button{
+				width: 100px;
+				height: 50px;
+				margin-bottom: 10px;
+			}			
+		</style>
+	</head>
+	<body>
+		<button id="btn1">←</button>
+		<button id="btn2">→</button>
+		<div id="box"></div>
+	</body>
+	<script type="text/javascript">
+		var btnL = document.getElementById("btn1");
+		var btnR = document.getElementById("btn2");
+		var oBox = document.getElementById("box")
+		var i = 0;
+//		btnL.onclick = function(){
+//			if(i==3){
+//				i=0
+//			}else{
+//				i++;
+//			}
+//			change(oBox,i)
+//		}
+//		btnR.onclick = function(){
+//			if(i==0){
+//				i=3
+//			}else{
+//				i--;
+//			}
+//			change(oBox,i)
+//		}
+//		
+//		function change(obj,num){
+//			switch(num){
+//				case 1 :
+//					obj.style.transform = "translate(-42px,42px) rotate(90deg)";
+//					break;
+//				case 2 :
+//					obj.style.transform = "translate(0px,0px) rotate(180deg)";
+//					break;
+//				case 3 : 
+//					obj.style.transform = "translate(-42px,42px) rotate(270deg)";
+//					break;
+//				default : 
+//					obj.style.transform = "";
+//			}
+//		}
+		
+		btnL.onclick = function(){
+			if(i==3){
+				i = 0
+			}else{
+				i++;
+			}
+			change(oBox , i);
+		}
+		btnR.onclick = function(){
+			if(i==0){
+				i = 3
+			}else{
+				i--;
+			}
+			change(oBox , i);
+		}
+		
+		
+		function change(obj , num){
+			switch(num){
+				case 1:
+				obj.style.transform = "translate(-75px , 75px) rotate(90deg)";
+				break;
+				case 2:
+				obj.style.transform = "translate(0px , 0px) rotate(180deg)";
+				break;
+				case 3:
+				obj.style.transform = "translate(-75px , 75px) rotate(270deg)";
+				break;
+				default :
+				obj.style.transform = "";
+			}
+		}
+
+	</script>
+</html>

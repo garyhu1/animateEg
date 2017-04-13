@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>倾斜</title>
+		<style type="text/css">
+			*{
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+			div{
+				height: 200px;
+				background: #FFC0CB;
+				text-align: center;
+				line-height: 200px;
+				overflow: hidden;
+			}
+			ul{
+				width: 362px;
+				height: 40px;
+				overflow: hidden;
+				display: inline-block;
+			}
+			li{
+				width: 70px;
+				height: 40px;
+				line-height: 40px;
+				text-align: center;
+				background: darkgreen;
+				float: left;
+				margin-left: 3px;
+				transform: skew(30deg);
+			}
+			ul li span {
+				transform: skew(-30deg);
+				/*只有设置为块元素才可以实现transform的效果*/
+				display: block;
+			}
+			
+			ul li:hover{
+				background: yellow;
+				cursor: pointer;
+			}
+			li:first-child{
+				margin-left: -11px;
+				padding-left: 11px;
+			}
+			li:last-child{
+				margin-right: -11px;
+				padding-right: 11px;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<ul>
+				<li><span>1</span></li>
+				<li><span>2</span></li>
+				<li><span>3</span></li>
+				<li><span>4</span></li>
+				<li><span>5</span></li>
+			</ul>
+		</div>
+	</body>
+</html>
