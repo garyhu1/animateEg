@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>蓝天白云</title>
+		<style type="text/css">
+			html,body{
+				margin: 0;
+				padding: 0;
+				height: 100%;
+			}
+			#title{
+				width: 100%;
+				text-align: center;
+			}
+			#sky{
+				width: 100%;
+				height: 500px;
+				position: relative;
+				overflow: hidden;
+				background: #007fd5;
+				-webkit-animation: skybg 50s ease-out infinite;
+				-moz-animation: skybg 50s ease-out infinite;
+				animation: skybg 50s ease-out infinite;
+			}
+			.cloud1{
+				width: 300%;
+				height: 100%;
+				position: absolute;
+				top:0;
+				left: 0;
+				background: url(../img/cloud_one.png);
+				-webkit-animation: cloudone 50s linear infinite;
+				-moz-animation: cloudone 50s linear infinite;
+				animation: cloudone 50s linear infinite;
+			}
+			.cloud2{
+				width: 300%;
+				height: 100%;
+				position: absolute;
+				top:0;
+				left: 0;
+				background: url(../img/cloud_two.png);
+				-webkit-animation: cloudone 75s linear infinite;
+				-moz-animation: cloudone 75s linear infinite;
+				animation: cloudone 75s linear infinite;
+			}
+			.cloud3{
+				width: 300%;
+				height: 100%;
+				position: absolute;
+				top:0;
+				left: 0;
+				background: url(../img/cloud_three.png);
+				-webkit-animation: cloudone 100s linear infinite;
+				-moz-animation: cloudone 100s linear infinite;
+				animation: cloudone 100s linear infinite;
+			}
+			/*动画定义部分*/
+			@keyframes skybg{
+				0% {
+					background: #007FD5;
+					color: #007FD5;
+				}
+				50% {
+					background: #000;
+					color: #a3d9ff;
+				}
+				100% {
+					background: #007FD5;
+					color: #007FD5;
+				}
+			}
+			@keyframes  cloudone{
+				0% {
+					left:0;
+				}
+				100% {
+					left: -200%;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="sky">
+			<div class="cloud1"></div>
+			<div class="cloud2"></div>
+			<div class="cloud3"></div>
+		</div>
+		<p id="title">模仿天空白云的流动</p>
+	</body>
+</html>
