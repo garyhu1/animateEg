@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>指示条</title>
+		<style type="text/css">
+			#title {
+				width: 60px;
+				height: 25px;
+				background-color: #228B22;
+				font-size: 12px;
+				text-align: center;
+			}
+			#container {
+				display: flex;
+				width: 61px;
+				height: 40px;
+				flex-direction: column;
+				position: relative;
+			}
+			.bottom-line {
+				position: absolute;
+				width: 0px;
+				height: 2px;
+				background-color: darkred;
+				left: 0;
+				bottom: 0;
+			}
+			#container:hover .bottom-line{
+				animation: strech 0.2s ease ;
+				animation-fill-mode: forwards;
+			}
+			@keyframes strech{
+				0% {
+					left: 50%;
+					width: 0;
+				}
+				50% {
+					left: 25%;
+					width: 30px;
+				}
+				100% {
+					left:0;
+					width:60px
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<p id="title">你好</p>
+			<div class="bottom-line"></div>
+		</div>
+	</body>
+</html>
