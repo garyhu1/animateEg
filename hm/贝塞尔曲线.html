@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>贝塞尔曲线</title>
+        <style type="text/css">
+            .animate{
+                width: 200px;
+                height: 200px;
+                background: pink;
+                transition: width 3s cubic-bezier(1,.02,.31,.9);
+                -webkit-transition: width 3s cubic-bezier(1,.02,.31,.9);
+
+            }
+            .animate:hover{
+                width: 1000px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="animate"></div>
+    </body>
+</html>
